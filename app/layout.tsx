@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+<link rel="icon" href="/favicon.ico" />
 
 export const metadata: Metadata = {
   title: 'Meg Bird',
