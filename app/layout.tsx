@@ -1,22 +1,21 @@
 import '@/styles/globals.css'
 import localFont from 'next/font/local'
-import { Metadata } from 'next'
 
 // Using Neue Haas as the primary font
 const neueHaas = localFont({
   src: [
     {
-      path: './fonts/NeueHaasDisplay-Roman.woff2',
+      path: './fonts/NHaasGroteskTXPro-55Rg.ttf',
       weight: '400',
       style: 'normal',
     },
     {
-      path: './fonts/NeueHaasDisplay-Medium.woff2',
+      path: './fonts/NHaasGroteskTXPro-65Md.ttf',
       weight: '500',
       style: 'normal',
     },
     {
-      path: './fonts/NeueHaasDisplay-Bold.woff2',
+      path: './fonts/NHaasGroteskTXPro-75Bd.ttf',
       weight: '700',
       style: 'normal',
     }
@@ -24,25 +23,17 @@ const neueHaas = localFont({
   variable: '--font-neue-haas'
 })
 
-// Using SF Mono for dates
-const sfMono = localFont({
+// Using SpaceMono for dates
+const spacemono = localFont({
   src: [
     {
-      path: './fonts/SF-Mono-Regular.otf',
+      path: './fonts/SpaceMono-Regular.ttf',
       weight: '400',
       style: 'normal',
     }
   ],
-  variable: '--font-sf-mono'
+  variable: '--font-space-mono'
 })
-
-export const metadata: Metadata = {
-  title: 'Meg Bird',
-  description: 'megbird.me',
-  icons: {
-    icon: '/favicon.png', // Using PNG instead of ICO for better compatibility
-  },
-}
 
 export default function RootLayout({
   children,
@@ -51,7 +42,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${neueHaas.variable} ${sfMono.variable} font-sans bg-[#fafafa]`}>{children}</body>
+      <body className={`${neueHaas.variable} ${spacemono.variable} font-sans bg-[#fafafa]`}>{children}</body>
     </html>
   )
 }
