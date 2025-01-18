@@ -11,7 +11,7 @@ export default function PersonalSite() {
   return (
     <div className={`
       min-h-screen transition-all duration-300 ease-in-out
-      ${isDarkMode ? 'bg-gray-900 text-white' : 'bg-[#fafafa] text-[#171717]'}
+     ${isDarkMode ? 'bg-[#221F26] text-white' : 'bg-[#fafafa] text-[#171717]'}
     `}>
       <div className="max-w-2xl mx-auto p-8">
         {/* Header */}
