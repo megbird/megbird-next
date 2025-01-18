@@ -5,17 +5,17 @@ import localFont from 'next/font/local'
 const neueHaas = localFont({
   src: [
     {
-      path: './fonts/NHaasGroteskTXPro-55Rg.ttf',
+      path: '../fonts/NHaasGroteskTXPro-55Rg.ttf',
       weight: '400',
       style: 'normal',
     },
     {
-      path: './fonts/NHaasGroteskTXPro-65Md.ttf',
+      path: '../fonts/NHaasGroteskTXPro-65Md.ttf',
       weight: '500',
       style: 'normal',
     },
     {
-      path: './fonts/NHaasGroteskTXPro-75Bd.ttf',
+      path: '../fonts/NHaasGroteskTXPro-75Bd.ttf',
       weight: '700',
       style: 'normal',
     }
@@ -27,7 +27,7 @@ const neueHaas = localFont({
 const spacemono = localFont({
   src: [
     {
-      path: './fonts/SpaceMono-Regular.ttf',
+      path: '../fonts/SpaceMono-Regular.ttf',
       weight: '400',
       style: 'normal',
     }
