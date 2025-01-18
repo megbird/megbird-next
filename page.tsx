@@ -61,7 +61,58 @@ export default function PersonalSite() {
         <h2 className={`text-[15px] mb-8 ${isDarkMode ? 'text-white' : 'text-[#171717]'}`}>work</h2>
 
         <div className="space-y-8 mb-20">
-          {/* Rest of your work experience sections */}
+
+          {/* Current role */}
+          <div className="flex gap-6">
+            <svg width="16" height="16" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg" className="mt-1 shrink-0">
+              <path 
+                fillRule="evenodd" 
+                clipRule="evenodd" 
+                d="M10 0L20 17.5H0L10 0Z" 
+                fill={isDarkMode ? "white" : "#171717"}
+              />
+            </svg>
+            <div>
+              <div className="flex gap-2 mb-2">
+                <h3 className={`text-[15px] ${isDarkMode ? 'text-white' : 'text-[#171717]'}`}>Staff UX Designer, Vercel</h3>
+                <span className={`text-[15px] font-mono ${isDarkMode ? 'text-gray-400' : 'text-[#737373]'}`}>2021-present</span>
+              </div>
+              <p className={`text-[15px] ${isDarkMode ? 'text-gray-400' : 'text-[#737373]'}`}>
+                Currently working as a Staff Designer specializing in UX
+                strategy and product vision work. I'm primarily focused on areas related to identity, security, and domains.
+              </p>
+            </div>
+          </div>
+
+          {/* GitHub Senior Content Designer */}
+          <div className="flex gap-6">
+            <Github className={`w-4 h-4 mt-1 shrink-0 ${isDarkMode ? 'text-white' : 'text-[#171717]'}`} />
+            <div>
+              <div className="flex gap-2 mb-2">
+                <h3 className={`text-[15px] ${isDarkMode ? 'text-white' : 'text-[#171717]'}`}>Senior Content Designer, GitHub</h3>
+                <span className={`text-[15px] font-mono ${isDarkMode ? 'text-gray-400' : 'text-[#737373]'}`}>2019-2021</span>
+              </div>
+              <p className={`text-[15px] ${isDarkMode ? 'text-gray-400' : 'text-[#737373]'}`}>
+                As a Senior Content Designer, I was responsible for shaping
+                the overall user experience for GitHub Docs + Primer.
+              </p>
+            </div>
+          </div>
+
+          {/* GitHub Staff Writer */}
+          <div className="flex gap-6">
+            <Github className={`w-4 h-4 mt-1 shrink-0 ${isDarkMode ? 'text-white' : 'text-[#171717]'}`} />
+            <div>
+              <div className="flex gap-2 mb-2">
+                <h3 className={`text-[15px] ${isDarkMode ? 'text-white' : 'text-[#171717]'}`}>Staff Content Writer, GitHub</h3>
+                <span className={`text-[15px] font-mono ${isDarkMode ? 'text-gray-400' : 'text-[#737373]'}`}>2017-2019</span>
+              </div>
+              <p className={`text-[15px] ${isDarkMode ? 'text-gray-400' : 'text-[#737373]'}`}>
+                I had the privilege of joining GitHub early on and learning UX
+                workflows by documenting them for technical accuracy.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
